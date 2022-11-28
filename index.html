@@ -290,6 +290,7 @@
       <div class="container container-clients">
         <h2 class="clients-title">Постійні клієнти</h2>
         <ul class="clients-list list">
+
           <li class="clients-item">
             <a href="#" class="partners-link">
               <svg class="feature-icon" width="106" height="60">
@@ -396,29 +397,14 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="close-button" data-modal-close>
-        <svg class="close-icon" width="30" height="30">
-          <use href="./imeges/svg/symbol-defs.svg#icon-close"></use>
+        <svg class="close-icon" width="17" height="17">
+          <use href="./imeges/svg/symbol-defs.svg#icon-close-icon-1"></use>
         </svg>
     </div>
     </button>
   </div>
 
-  <script>
-    (() => {
-      const refs = {
-        openModalBtn: document.querySelector('[data-modal-open]'),
-        closeModalBtn: document.querySelector('[data-modal-close]'),
-        modal: document.querySelector('[data-modal]'),
-      };
-
-      refs.openModalBtn.addEventListener('click', toggleModal);
-      refs.closeModalBtn.addEventListener('click', toggleModal);
-
-      function toggleModal() {
-        refs.modal.classList.toggle('is-hidden');
-      }
-    })();
-  </script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
